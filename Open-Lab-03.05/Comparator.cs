@@ -6,7 +6,15 @@ namespace Open_Lab_03._05
     {
         public bool MatchCaseInsensitive(string str1, string str2)
         {
-            throw new NotImplementedException();
+            bool equuals = string.Equals(str1,str2, StringComparison.OrdinalIgnoreCase);
+             if (equuals==true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
